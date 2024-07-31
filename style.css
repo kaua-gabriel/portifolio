@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 
-   
+
 }
 
 
@@ -12,9 +12,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #848282;
-    /* background-image: url(img/fundo.jpg); */
+    background-image: url(img/fundo.jpeg);
 
-    
 }
 
 /* Cabeçalho */
@@ -24,12 +23,12 @@ header {
     text-align: center;
     padding: 2rem 0;
 
-    
+
 }
 
 .icones-redes {
     width: 200px;
-   
+
     align-items: end;
     display: flex;
     justify-content: space-between;
@@ -40,8 +39,13 @@ header {
 
 /* animação das letras */
 @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -56,7 +60,7 @@ header {
 }
 
 
-.skills img{
+.skills img {
     left: 50%;
 }
 
@@ -68,8 +72,34 @@ section {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-    
 }
+
+
+
+
+/* card login */
+.login {
+    width: 50%;
+    height: 70%;
+}
+
+.imagemUM {
+  width: 100px;
+}
+
+.imagemDOIS {
+    width: 100vh;
+}
+
+.exemplo-um {
+    width: 100vh;
+}
+
+.exemplo-dois {
+    width: 100vh;
+}
+
+
 
 /* final do site */
 footer {
@@ -78,4 +108,3 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
