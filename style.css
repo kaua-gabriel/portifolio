@@ -64,9 +64,7 @@ header {
 }
 
 
-.skills img {
-    left: 50%;
-}
+
 
 /* Seções */
 section {
@@ -173,6 +171,18 @@ footer {
     width: 500px;
     margin: 10px auto;
     font-weight: 200;
+}
+
+.skills h2 {
+    font-size: 40px;
+}
+
+.skills p{
+    font-size: 30px;
+}
+
+.main-cards img {
+    width: 30%;
 }
 
 .main-cards {
