@@ -247,7 +247,7 @@ footer {
 #card3 {border-top: 5px solid var(--blue);}
 #card4 {border-top: 5px solid var(--orange);}
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 990px) {
     .main-cards {
         padding: 0px 20px;
         grid-template-columns: repeat(2, 1fr);
@@ -265,9 +265,13 @@ footer {
         height: 225px;
         padding: 30px 20px;
     }
+
+    .main-cards img {
+        width: 23%;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
 
     .header h1 {
         font-size: 1.6rem;
@@ -297,6 +301,10 @@ footer {
 
     .card p {
         font-size: 14px;
+    }
+
+    .main-cards img {
+        width: 19%;
     }
 }
 
