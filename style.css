@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
 
 
@@ -15,9 +13,6 @@ body {
     background-image: url(img/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-
-
-    
 }
 
 /* Cabeçalho */
@@ -26,8 +21,7 @@ header {
     color: #fff;
     text-align: center;
     padding: 2rem 0;
-
-
+    
 }
 
 .icones-redes {
@@ -101,7 +95,16 @@ section {
 /* Estilos das seções (exemplo) */
 #sobre {
     padding: 40px;
-    background-color: #a08282;
+    background-color: #ffffff;
+    margin: 2% 4%;
+}
+
+#projetos {
+    margin: 2% 4%;
+}
+
+#contato {
+    margin: 2% 4%;
 }
 
 /* Estilos para a seção de projetos */
@@ -197,9 +200,6 @@ footer {
     "card2 card4 card3"
     ".     card4     ."
     ;
-
-
-   
     max-width: 1440px;
     min-height: 100vh;
     margin: 0px auto;
@@ -247,7 +247,7 @@ footer {
 #card3 {border-top: 5px solid var(--blue);}
 #card4 {border-top: 5px solid var(--orange);}
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 900px) {
     .main-cards {
         padding: 0px 20px;
         grid-template-columns: repeat(2, 1fr);
