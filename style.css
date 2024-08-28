@@ -247,6 +247,17 @@ footer {
 #card3 {border-top: 5px solid var(--blue);}
 #card4 {border-top: 5px solid var(--orange);}
 
+@media screen and (max-width: 2500px) {
+    .main-cards img {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .main-cards img {
+        width: 28%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .main-cards {
         padding: 0px 20px;
