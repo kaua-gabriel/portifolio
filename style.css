@@ -21,11 +21,10 @@ header {
     color: #fff;
     text-align: center;
     padding: 2rem 0;
-    
 }
 
 .icones-redes {
-    width: 200px;
+    width: 280px;
 
     align-items: end;
     display: flex;
@@ -54,7 +53,7 @@ header {
 
 
 .icones-redes a:hover {
-    color: #6204BF;
+    color: #ff0000;
 }
 
 
