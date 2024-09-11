@@ -238,7 +238,7 @@ footer {
 .card figure .img-card {
     display: block;
     float: right;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #card1 {border-top: 5px solid var(--red);}
