@@ -245,7 +245,6 @@ section {
 
 
 /* contatos */
-
 .card {
     background-color: rgb(33, 33, 33);
     display: flex;
@@ -253,7 +252,6 @@ section {
     justify-content: center;
     padding: 25px 25px;
     gap: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
 }
 
 /* for all social containers*/
@@ -326,11 +324,12 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 2px;
 }
 
 .cartas:hover {
     flex: 2;
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 .Arte img {
@@ -345,6 +344,7 @@ footer {
     color: #fff;
 }
 
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .perfil {
@@ -354,9 +354,37 @@ footer {
     .imginicio {
         height: 500px;
     }
+
+    .cartas {
+        height: 180px;
+        width: 180px;
+    }
+
+    .Arte img {
+        width: 180px;
+        height: 180px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    .Arte {
+        flex-direction: column; /* Coloca as imagens uma abaixo da outra */
+        align-items: center; /* Centraliza as imagens */
+    }
+
+    .cartas {
+        width: 100%; 
+        max-width: 300px; 
+    }
+
+    .Arte img {
+        width: 100%;
+        max-width: 300px; 
+    }
+}
+
+
+@media (max-width: 800px) {
     .perfil {
         width: 70%;
     }
@@ -367,6 +395,28 @@ footer {
 
     section {
         margin: 10px 20px;
+    }
+
+    .cartas {
+        height: 140px;
+        width: 140px;
+    }
+
+    .Arte img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cartas {
+        height: 120px;
+        width: 120px;
+    }
+
+    .Arte img {
+        width: 120px;
+        height: 120px;
     }
 }
 
