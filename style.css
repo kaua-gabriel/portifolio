@@ -379,8 +379,6 @@ footer {
 }
 
 
-
-
 /* Media Queries */
 @media (max-width: 1200px) {
     .perfil {
@@ -460,6 +458,18 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .text {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .parada {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
 @media (max-width: 576px) {
     .cartas {
         height: 120px;
@@ -484,5 +494,15 @@ footer {
     section {
         margin: 5px 10px;
         padding: 1rem;
+    }
+
+    .text {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .parada {
+        margin: 2px;
+        padding: 2px;
     }
 }
