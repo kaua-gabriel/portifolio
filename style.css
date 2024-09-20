@@ -8,7 +8,7 @@
 /* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    background-color: #848282;
+    background-color: #000000;
     background-image: url(img/fundo.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,9 +213,7 @@ section {
     justify-content: space-around;
 }
 
-
-
-#habilidades {
+#projeto {
     margin: 2% 4%;
 }
 
@@ -249,7 +247,6 @@ section {
     gap: 20px;
 }
 
-/* for all social containers*/
 .socialContainer {
     width: 52px;
     height: 52px;
@@ -311,6 +308,38 @@ section {
     filter: blur(0px);
     fill: black;
 }
+
+
+/* parte das habilidades */
+.parada {
+    position: relative;
+    display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.text {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.parada:hover .text {
+    visibility: visible;
+}
+
+
 
 /* cartas fixa */
 .Arte {
@@ -379,25 +408,29 @@ footer {
     }
 
     .socialSvg {
-        width: 15px; /* Ajuste o tamanho conforme necessário */
-        margin-bottom: 10px; /* Espaçamento entre os ícones */
+        width: 15px;
+        /* Ajuste o tamanho conforme necessário */
+        margin-bottom: 10px;
+        /* Espaçamento entre os ícones */
     }
 }
 
 @media (max-width: 900px) {
     .Arte {
-        flex-direction: column; /* Coloca as imagens uma abaixo da outra */
-        align-items: center; /* Centraliza as imagens */
+        flex-direction: column;
+        /* Coloca as imagens uma abaixo da outra */
+        align-items: center;
+        /* Centraliza as imagens */
     }
 
     .cartas {
-        width: 100%; 
-        max-width: 300px; 
+        width: 100%;
+        max-width: 300px;
     }
 
     .Arte img {
         width: 100%;
-        max-width: 300px; 
+        max-width: 300px;
     }
 
 }
