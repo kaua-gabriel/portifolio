@@ -138,12 +138,7 @@ header {
     filter: blur(0px);
 }
 
-.Social-Btn:hover .svgContainer {
-    z-index: 20;
-    background-color: rgba(156, 156, 156, 0.466);
-    filter: blur(0px);
-    fill: black;
-}
+
 
 
 
@@ -295,6 +290,9 @@ section {
     transition-duration: .3s;
 }
 
+
+
+/* svg */
 .socialSvg {
     width: 20px;
 }
@@ -305,6 +303,13 @@ section {
 
 .socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
+}
+
+.Social-Btn:hover .svgContainer {
+    z-index: 20;
+    background-color: rgba(156, 156, 156, 0.466);
+    filter: blur(0px);
+    fill: black;
 }
 
 /* cartas fixa */
@@ -345,6 +350,8 @@ footer {
 }
 
 
+
+
 /* Media Queries */
 @media (max-width: 1200px) {
     .perfil {
@@ -364,6 +371,17 @@ footer {
         width: 180px;
         height: 180px;
     }
+
+    .socialContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialSvg {
+        width: 15px; /* Ajuste o tamanho conforme necessário */
+        margin-bottom: 10px; /* Espaçamento entre os ícones */
+    }
 }
 
 @media (max-width: 900px) {
@@ -381,6 +399,7 @@ footer {
         width: 100%;
         max-width: 300px; 
     }
+
 }
 
 
