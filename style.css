@@ -87,10 +87,6 @@ header {
 }
 
 
-
-
-
-
 .BG {
     position: absolute;
     top: 0;
@@ -206,11 +202,16 @@ section {
 
 
 /* Estilos das seções (exemplo) */
-#skills {
+#experiências {
     background-color: #ffffff;
-    margin: 0% 0%;
-    display: flex;
-    justify-content: space-around;
+
+    position: relative;
+    display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
 }
 
 #projeto {
@@ -392,6 +393,7 @@ footer {
     .cartas {
         height: 180px;
         width: 180px;
+
     }
 
     .Arte img {
@@ -416,9 +418,7 @@ footer {
 @media (max-width: 900px) {
     .Arte {
         flex-direction: column;
-        /* Coloca as imagens uma abaixo da outra */
         align-items: center;
-        /* Centraliza as imagens */
     }
 
     .cartas {
