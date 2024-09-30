@@ -202,7 +202,7 @@ section {
 
 
 /* Estilos das seções (exemplo) */
-#experiências {
+#experiencias {
     background-color: #ffffff;
 
     position: relative;
@@ -214,10 +214,41 @@ section {
     padding: 10px;
 }
 
-#projeto {
-    margin: 2% 4%;
+#experiencias svg {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+#experiencias svg:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(247, 28, 28, 0.715);
+}
+
+#projeto {
+    margin: 2% 4%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.projeto {
+    font-family: 'Verdana', sans-serif;
+    color: #111111;
+    line-height: 1.6;
+}
+
+.projeto p {
+    margin: 10px 0;
+}
 #contato {
     margin: 2% 4%;
     padding: 0%;
@@ -246,6 +277,7 @@ section {
     justify-content: center;
     padding: 25px 25px;
     gap: 20px;
+
 }
 
 .socialContainer {
@@ -293,6 +325,7 @@ section {
 /* svg */
 .socialSvg {
     width: 20px;
+
 }
 
 .socialSvg path {
@@ -310,18 +343,21 @@ section {
     fill: black;
 }
 
-
-/* parte das habilidades */
 .parada {
     position: relative;
     display: inline-block;
-
     align-items: center;
     justify-content: center;
     margin: 10px;
     padding: 10px;
-
+    background-color: #e0e0e0;
+    border: 2px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
+
 
 .text {
     visibility: hidden;
