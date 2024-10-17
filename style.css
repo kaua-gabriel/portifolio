@@ -376,7 +376,56 @@ h2 {
     visibility: visible;
 }
 
+/* projetos atual */
 
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+.projeto {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem-medieval {
+    width: 100%;
+    max-width: 250px;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-medieval:hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+.imagem-medieval1 {
+    width: 100%;
+    max-width: 250px;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-medieval1:hover {
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 
 /* cartas fixa */
 .Arte {
