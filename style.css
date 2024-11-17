@@ -7,10 +7,10 @@
 
 /* Estilos gerais */
 body {
-    background: linear-gradient(135deg, #1A1A1C, #2c3e50);
+    background: linear-gradient(135deg, #1A1A1C, #2C3E50);
     font-family: 'Arial', sans-serif;
     color: white;
-    margin: 0;
+    margin: 0;  
     padding: 0;
 }
 
@@ -222,7 +222,7 @@ section {
 
 #experiencias svg:hover {
     transform: scale(1.2);
-    box-shadow: 0 4px 8px rgba(247, 28, 28, 0.715);
+    box-shadow: 0 4px 8px rgba(61, 70, 80, 0.715);
 }
 
 #projeto {
@@ -304,7 +304,7 @@ h2 {
 
 /* linkdin*/
 .containerThree:hover {
-    background-color: #0072b1;
+    background-color: #0072B1;
     transition-duration: .3s;
 }
 
@@ -328,7 +328,7 @@ h2 {
 }
 
 .socialSvg path {
-    fill: rgb(255, 255, 255);
+    fill: rgba(255, 255, 255, 1);
 }
 
 .socialContainer:hover .socialSvg {
@@ -337,7 +337,7 @@ h2 {
 
 .Social-Btn:hover .svgContainer {
     z-index: 20;
-    background-color: rgba(156, 156, 156, 0.466);
+    background-color: rgba(39, 39, 39, 1);
     filter: blur(0px);
     fill: black;
 }
@@ -349,12 +349,12 @@ h2 {
     justify-content: center;
     margin: 10px;
     padding: 10px;
-    background-color: #e0e0e0;
-    border: 2px solid #333;
+    background-color: #E0E0E0;
+    border: 2px solid #333333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
-    color: #333;
+    color: #333333;
 }
 
 
@@ -417,8 +417,8 @@ main {
 
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333333;
+    color: #FFFFFF;
     text-align: center;
     padding: 1em 0;
     position: fixed;
@@ -434,7 +434,7 @@ footer {
 }
 
 .cartas {
-    background-color: #fff;
+    background-color: #FFFFFF;
     height: 200px;
     width: 200px;
     flex: 1;
@@ -448,7 +448,7 @@ footer {
 
 .cartas:hover {
     flex: 2;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .Arte img {
@@ -464,7 +464,7 @@ footer {
 }
 
 
-/* Media Queries */
+
 @media (max-width: 1200px) {
     .perfil {
         width: 50%;
@@ -503,7 +503,7 @@ footer {
 #jogos {
     text-align: center;
     padding: 3rem 2rem;
-    background-color: rgba(255, 255, 255, 0.7); /* Fundo leve para destacar a seção */
+    background-color: rgba(255, 255, 255, 0.65); /* Fundo leve para destacar a seção */
     border-radius: 10px;
     margin: 2rem auto;
     width: 80%;
@@ -512,34 +512,14 @@ footer {
 
 #jogos h1 {
     font-size: 2.5em;
-    color: #9b4dca; /* Cor roxa */
+    color: #9B4DCA; /* Cor roxa */
     margin-bottom: 20px;
 }
 
 #jogos p {
     font-size: 1.2em;
-    color: #555;
+    color: #555555;
     margin-bottom: 30px;
-}
-
-/* Botões dos Jogos */
-.botao-jogo {
-    background-color: #AF2E2E; /* Cor roxa */
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease; /* Efeito suave */
-}
-
-.botao-jogo:hover {
-    background-color: #711F1F; /* Cor mais escura de roxo */
 }
 
 #jogos a {
@@ -660,7 +640,7 @@ p {
 
 .botao-jogo {
     display: inline-block;
-    background: #8B0000; /* Vermelho escuro */
+    background: linear-gradient(135deg, #1A1A1C, #2C3E50);
     color: #fff;
     padding: 15px 30px;
     margin: 10px;
@@ -671,10 +651,10 @@ p {
 }
 
 .botao-jogo:hover {
-    background: #B22222; /* Vermelho mais claro para o hover */
+    background:  linear-gradient(135deg, #405870, #2A2A2C); 
 }
 
 .botao-jogo:focus {
     outline: none;
-    background: #D63031; /* Vermelho mais intenso para o foco */
-}
+    background:  linear-gradient(135deg, #2C3E50, #1A1A1C); 
+        }
