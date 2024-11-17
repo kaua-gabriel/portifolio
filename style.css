@@ -217,7 +217,7 @@ section {
     width: 75px;
     height: 75px;
     margin: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3;
 }
 
 #experiencias svg:hover {
