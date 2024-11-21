@@ -1,0 +1,661 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    background: linear-gradient(135deg, #1A1A1C, #2C3E50);
+    font-family: 'Arial', sans-serif;
+    color: white;
+    margin: 0;  
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3b3b3b00;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.imginicio {
+    width: 100%;
+    height: 700px;
+}
+
+
+/* perfil */
+.perfil {
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    background: #212121;
+    transition: 1s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil span {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 1em;
+}
+
+.perfil .info {
+    font-weight: 400;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 1em;
+    font-size: large;
+    font-weight: 5;
+}
+
+.perfil .imgPerf {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    padding: 30px 30px;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+}
+
+.perfil .share {
+    margin-top: -5;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.perfil a {
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.perfil a:hover {
+    color: red;
+}
+
+
+.BG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 2s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: transparent;
+    filter: blur(4px);
+    z-index: 4;
+}
+
+.BG::before {
+    position: absolute;
+    content: "";
+    height: 0.6em;
+    width: 0.6em;
+    bottom: -0.2em;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    background: white;
+    opacity: -1;
+    z-index: -10;
+    transition: 5s all;
+}
+
+.Social-Btn:hover .BG::before {
+    opacity: 1;
+}
+
+.Social-Btn:hover .BG {
+    transform: translateY(-130%);
+    transform-origin: bottom;
+    background: white;
+    color: black;
+    filter: blur(0px);
+}
+
+.icones-redes {
+    width: 280px;
+
+    align-items: end;
+    display: flex;
+    justify-content: space-between;
+
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* animação das letras */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.icones-redes a {
+    color: #000000
+}
+
+
+.icones-redes a:hover {
+    color: #ff0000;
+}
+
+
+
+
+/* Seções */
+section {
+    padding: 2rem;
+    background-color: #FFFFFF;
+    margin: 20px 60px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(195, 192, 192, 0.1);
+    border: none;
+}
+
+
+/* Estilos das seções (exemplo) */
+#experiencias {
+    background-color: #ffffff;
+
+    position: relative;
+    display: inline-block;
+
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+#experiencias svg {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3;
+}
+
+#experiencias svg:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px rgba(61, 70, 80, 0.715);
+}
+
+
+#contato {
+    margin: 2% 4%;
+    padding: 0%;
+}
+
+/* Estilos para a seção de habilidades */
+.interface {
+    border-radius: 20px;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 10 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* contatos */
+.card {
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+
+}
+
+.socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+}
+
+/* github*/
+.containerTwo:hover {
+    background-color: #d04242;
+    transition-duration: .3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+    background-color: #0072B1;
+    transition-duration: .3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+}
+
+
+
+/* svg */
+.socialSvg {
+    width: 20px;
+
+}
+
+.socialSvg path {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+.Social-Btn:hover .svgContainer {
+    z-index: 20;
+    background-color: rgba(39, 39, 39, 1);
+    filter: blur(0px);
+    fill: black;
+}
+
+.parada {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #E0E0E0;
+    border: 2px solid #333333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+
+.text {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.parada:hover .text {
+    visibility: visible;
+}
+
+/* projetos atual */
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+
+.projeto-atual .descricao,
+.projeto-atual .ferramentas {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+    margin-top: 1.5rem;
+}
+
+.imagem-medieval {
+    width: 100%;
+    max-width: 300px; /* Controle de tamanho */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagem-medieval:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
+}
+
+.imagem-medieval {
+    width: 100%;
+    max-width: 250px;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-medieval:hover {
+    transform: rotateY(360deg);
+    transition: 2s;
+}
+
+.imagem-medieval1 {
+    width: 100%;
+    max-width: 250px;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-medieval1:hover {
+    transform: rotateX(360deg);
+    transition: 2s;
+}
+
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+    position: 
+    width: 100%;
+    bottom: 0;
+}
+
+/* cartas fixa */
+.Arte {
+    display: flex;
+    gap: 10px;
+    left: auto;
+}
+
+.cartas {
+    background-color: #FFFFFF;
+    height: 200px;
+    width: 200px;
+    flex: 1;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.cartas:hover {
+    flex: 2;
+    background-color: #FFFFFF;
+}
+
+.Arte img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+@media (max-width: 1200px) {
+    .perfil {
+        width: 50%;
+    }
+
+    .imginicio {
+        height: 500px;
+    }
+
+    .cartas {
+        height: 180px;
+        width: 180px;
+
+    }
+
+    .Arte img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .socialContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialSvg {
+        width: 15px;
+        /* Ajuste o tamanho conforme necessário */
+        margin-bottom: 10px;
+        /* Espaçamento entre os ícones */
+    }
+}
+
+/* Seção Jogos Disponíveis */
+.jogos {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: rgba(255, 255, 255, 0.65); /* Fundo leve para destacar a seção */
+    border-radius: 10px;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 900px;
+}
+
+
+.jogos a {
+    display: inline-block;
+}
+
+@media (max-width: 900px) {
+    .Arte {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cartas {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .Arte img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .perfil {
+        width: 70%;
+    }
+
+    .imginicio {
+        height: 300px;
+    }
+
+    section {
+        margin: 10px 20px;
+    }
+
+    .cartas {
+        height: 140px;
+        width: 140px;
+    }
+
+    .Arte img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .parada {
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cartas {
+        height: 120px;
+        width: 120px;
+    }
+
+    .Arte img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil {
+        width: 90%;
+    }
+
+    .imginicio {
+        height: 200px;
+    }
+
+    section {
+        margin: 5px 10px;
+        padding: 1rem;
+    }
+
+    .text {
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .parada {
+        margin: 2px;
+        padding: 2px;
+    }
+}
+
+
+h2 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+  text-align: center;
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #4A4A4A; /* Cor cinza escuro para contraste suave */
+}
+
+.botao-jogo {
+    background: linear-gradient(135deg, #1A1A1C, #2C3E50);
+    color: #FFFFFF;
+    padding: 15px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+
+    /* Centralização */
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.botao-jogo:hover {
+    background:  linear-gradient(135deg, #405870, #2A2A2C); 
+}
+
+.botao-jogo:focus {
+    outline: none;
+    background:  linear-gradient(135deg, #2C3E50, #1A1A1C); 
+}
+
+.artes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+}
+
+.cartas img {
+    width: 100%;
+    max-width: 200px; /* Controle do tamanho */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartas img:hover {
+    transform: scale(1.05); /* Ampliação sutil */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
